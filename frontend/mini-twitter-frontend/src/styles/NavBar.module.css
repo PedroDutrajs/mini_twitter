@@ -1,0 +1,63 @@
+/* src/styles/NavBar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .dark {
+    background: #333;
+    color: #f0f0f0;
+  }
+  
+  .left, .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .active {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .username {
+    font-weight: 500;
+  }
+  

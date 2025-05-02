@@ -1,0 +1,223 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.postCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.content {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.footer {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.info {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+}
+
+.error {
+  text-align: center;
+  margin-top: 2rem;
+  color: #d9534f;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+}
+
+:global(.dark) .wrapper {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.postCard {
+  background: #f9f9f9;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.5s;
+  color: #fff;
+}
+
+.postCard:hover {
+  transform: translateY(-2px);
+}
+
+:global(.dark) .postCard {
+  background: #1e1e1e;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.content {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.image {
+  width: 50%;     /* metade da largura do container */
+height: auto;
+border-radius: 4px;
+margin-bottom: 0.75rem;
+object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.likeButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #e0245e;
+}
+
+.likeButton:hover {
+  opacity: 0.7;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pageButton {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.info, .error {
+  text-align: center;
+  color: #555;
+  margin-top: 2rem;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.editButton {
+  background: #ffc107;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  color: #212529;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background: #dc3545;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+:global(.dark) .title {
+  color: #e0e0e0 !important;
+}
+
+:global(.dark) .header {
+  color: #aaa !important;
+}
+
+:global(.dark) .content {
+  color: #ddd !important;
+}
+
+:global(.dark) .footer,
+:global(.dark) .info,
+:global(.dark) .error {
+  color: #bbb !important;
+}
+
+:global(.dark) .pagination .pageButton {
+  background: #444;
+  color: #eee;
+}
+
+:global(.dark) .pageButton:disabled {
+  background: #666;
+  color: #888;
+}
